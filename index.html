@@ -1,21 +1,152 @@
-<html>
-    <body>
-        <script>
-            count()
-            function count(){
-                var sUserAgent = navigator.userAgent.toLowerCase();
-                var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-                var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-                var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-                var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-                var bIsAndroid = sUserAgent.match(/android/i) == "android";
-                var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-                var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-                if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM){
-                    window.location = "https://m.toutou222.com/zh-cn/registration/?affcode=a561";
-                }else{
-                    window.location = "https://www.toutou222.com/zh-cn/registration/?affcode=a561";
-                }
-            }</script>
-    </body>
-</html>
+<meta name="viewport" content="width=720,user-scalable=no">
+<script src="./sources/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="./sources/script.js"></script>
+<title>安全访问...</title>
+<style>
+body{
+	margin:0 auto;
+	text-align:center;}
+	
+a:hover{
+    background:#000000;}
+
+#logo{
+	margin:0 auto;
+	width:250px;
+	margin-top:150px;
+}
+
+#main {
+	width:300px;
+	margin:0 auto;
+	vertical-align: middle;
+	height:50px;
+	margin-top:5px;
+}  
+
+
+.imagelayer{
+	margin:0 auto;
+	width:250px;
+	height:250px;
+	}
+
+
+.referrer-button {
+    -webkit-user-select: none;
+    text-decoration:none;
+    background: #428bca;
+    text-align:center;
+    width:100%;
+    border: 0;
+    box-shadow: 1px 1px 1px #888888;
+    height:48px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    font:18px/30px 'Microsoft YaHei', 'Arial';
+    cursor: pointer;
+    float: left;
+    margin: 0 auto;
+    padding: 8px 24px;
+    transition: box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+}
+
+#wdetails{
+	text-align:center;
+	width:240px;
+	margin: 0 auto;
+	margin-top:15px;
+}
+.fonts{
+	font:18px/30px 'Microsoft YaHei', 'Arial';
+	color:#666;
+	text-align:center;
+}
+
+@media screen and (max-height: 400px)  and (orientation: landscape){
+	 #logo {
+        margin-top:15px;
+    }
+	.imagelayer{
+		width:150px;
+		height:150px;
+	}
+}
+
+@media screen and (max-height: 500px)  and (orientation: portrait){
+	 #logo {
+        margin-top:15px;
+    }
+	.imagelayer{
+		width:150px;
+		height:150px;
+	}
+}
+
+@media screen and (max-height: 560px) and  (min-height: 400px) and (orientation: landscape){
+    #logo {
+        margin-top:15px;
+    }
+}
+
+
+
+@media screen and (min-height: 560px) and (orientation: landscape){
+	#main {
+		margin-top:15px;
+	}
+	#wdetails{
+		margin-top:20px;
+	}
+}
+
+@media screen and (max-height: 700px) and  (min-height: 500px) and (orientation: portrait){
+    #logo {
+        margin-top:15px;
+    }
+}
+
+@media screen and (min-height: 700px) and (orientation: portrait){
+	#main {
+		margin-top:15px;
+	}
+	#wdetails{
+		margin-top:20px;
+	}
+}
+
+@media screen and (orientation: portrait) {
+    #main {
+		position:fixed;
+        bottom:35px;
+		left:10%;
+		width:80%;
+		height:88px;
+		}
+	.referrer-button {
+		height:88px;
+		font:28px/70px 'Microsoft YaHei', 'Arial';
+		border-radius: 40px;
+	}
+	#wdetails{
+		position:fixed;
+		bottom:135px;
+		left:45%;
+		margin-left:-110px;
+	}
+	.fonts{
+		font:24px/40px 'Microsoft YaHei', 'Arial';
+	}
+}
+</style>
+</head>
+<body>
+<div id="logo">
+<img src="./sources/wechat.png" class="imagelayer">
+</div>
+<div id="wdetails"><font class="fonts">注册之后扫码加微信<br>即可领取288元微信现金红包</font></div>
+<div id="main">
+<a isconvert="1" onclick="count();" class="referrer-button">立即注册</a>
+</div>
+</body></html>
